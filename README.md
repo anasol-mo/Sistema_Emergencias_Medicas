@@ -17,23 +17,22 @@ Este proyecto simula un sistema concurrente de atención de emergencias médicas
 
 ## 🧩 Arquitectura del sistema
 
-- `Main.java`: punto de entrada del sistema.
-- `SistemaEmergencias.java`: gestión central de emergencias, ambulancias y observadores.
-- `Emergencia.java`: representa un caso de emergencia con gravedad, ubicación y tiempo.
-- `Ambulancia.java`: recurso compartido con control de estado y fallos.
-- `Operador.java`: genera emergencias aleatorias.
-- `Despachador.java`: asigna ambulancias disponibles según prioridad.
-- `MonitorSistema.java`: imprime el estado del sistema y recibe notificaciones.
-- `SimuladorFallas.java`: induce fallos y recuperaciones en ambulancias.
-- `EstadisticasSistema.java`: registra métricas de rendimiento.
-- `EmergenciaListener.java`: interfaz Observer.
-- `PrioridadEmergenciaComparator.java`: define el orden de atención.
+- `Main.java`: Punto de entrada del sistema.
+- `SistemaEmergencias.java`: Gestión central de emergencias, ambulancias y observadores.
+- `Emergencia.java`: Representa un caso de emergencia con gravedad, ubicación y tiempo.
+- `Ambulancia.java`: Recurso compartido con control de estado y fallos.
+- `Operador.java`: Genera emergencias aleatorias.
+- `Despachador.java`: Asigna ambulancias disponibles según prioridad.
+- `MonitorSistema.java`: Imprime el estado del sistema y recibe notificaciones.
+- `SimuladorFallas.java`: Induce fallos y recuperaciones en ambulancias.
+- `EstadisticasSistema.java`: Registra métricas de rendimiento.
+- `EmergenciaListener.java`: Interfaz Observer.
+- `PrioridadEmergenciaComparator.java`: Define el orden de atención.
 
 ---
 
 ## ⚙️ Tecnologías utilizadas
 
-- Java 8+ (recomendado Java 11 o superior)
 - Concurrencia con `Thread`, `Runnable`, `PriorityBlockingQueue`
 - Sincronización con `synchronized`
 - Diseño basado en patrones: **Productor-Consumidor**, **Observer**
